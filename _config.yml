@@ -23,7 +23,7 @@ description: Yazılım ve Devopsa Dair Her Şey
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  Hakkımda: "aboutme"
   # Open Learning: "openlearning"
   # Projects: "projects"
 #  Resources:
