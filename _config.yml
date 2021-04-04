@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "https://kratzert.github.io"
+url: "https://susimsek.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,18 +14,18 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Flair of Machine Learning
+title: Şuayb Şimşek Kişisel BLog
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Yazılım ve Devopsa Dair Her Şey
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Open Learning: "openlearning"
-  Projects: "projects"
+  About Me: "Hakkımda"
+  # Open Learning: "openlearning"
+  # Projects: "projects"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
@@ -57,12 +57,12 @@ avatar: "/img/avatar.jpg"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Frederik Kratzert
-  email: "f.kratzert@gmail.com"
-  github: kratzert
-  twitter: fkratzert
-  linkedin: frederik-kratzert-226a33148
-  xing: yourname
+  name: Şuayb Şimşek
+  email: "suaybsimsek58@gmail.com"
+  github: susimsek
+  twitter: suaybsimsek58
+  linkedin: şuayb-şimşek-29b077178
+  xing: susimsek
   stackoverflow: yourlink
 
 
@@ -87,11 +87,11 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "kratzert.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "susimsek.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "kratzertblog"
+disqus: "susmisektblog"
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-96660715-1"
@@ -113,7 +113,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "Europe/Berlin"
+timezone: "Europe/Istanbul"
 markdown: kramdown
 highlighter: rouge
 #permalink: /:year/:month/:day/:title/.html
