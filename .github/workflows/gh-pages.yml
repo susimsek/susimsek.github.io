@@ -1,36 +1,41 @@
-name: Deploy Github Pages with Action
+name: Build GH-Pages
 
 on:
   push:
-    branches: [ master ]
+    paths-ignore:
+      - 'images/**'
+      - 'LICENSE'
+      - 'README.md'
+    branches:
+      - exampleSite
+  workflow_dispatch:
+    # manual run
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-          submodules: true  
-          fetch-depth: 0
+      - name: Git checkout
+        uses: actions/checkout@v2
+        with:
+          ref: exampleSite
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
+      - name: Get Theme
+        run: git submodule update --init --recursive
+
+      - name: Update theme to Latest commit
+        run: git submodule update --remote --merge
+
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
           hugo-version: 'latest'
 
-    - name: Clean public directory
-      run: rm -rf public
+      - name: Build
+        run: hugo --buildDrafts --gc --verbose --minify
 
-    - name: Build
-      run: hugo --minify --verbose
-
-    - name: Create cname file
-      run: echo 'susimsek.github.io' > public/CNAME
-
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
           github_token: ${{ secrets.TOKEN }}
           publish_dir: ./public
