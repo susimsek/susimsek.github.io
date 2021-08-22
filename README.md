@@ -1,4 +1,4 @@
-# hugo-paperMod Example
+# hugo-paperMod Example1
 
 This repository offers an example site for [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod)
 
